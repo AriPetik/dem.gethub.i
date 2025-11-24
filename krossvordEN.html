@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новогодний кроссворд</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+            text-align: center;
+            padding: 20px;
+            color: #01579b;
+        }
+        h1 {
+            color: #d50000;
+            margin-bottom: 10px;
+        }
+        .crossword {
+            display: inline-block;
+            border: 2px solid #01579b;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .crossword td {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #01579b;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+        }
+        .black {
+            background-color: #000;
+        }
+        .clues {
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: left;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .clues h2 {
+            color: #0288d1;
+            margin-top: 0;
+        }
+        .clue {
+            margin: 6px 0;
+        }
+        .highlight {
+            color: #d50000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎄 Новогодний кроссворд 🎄</h1>
+
+    <!-- Сетка кроссворда: 7 строк × 7 столбцов -->
+    <table class="crossword">
+        <tr>
+            <td>S</td><td>N</td><td>O</td><td>W</td><td>M</td><td>A</td><td>N</td>
+        </tr>
+        <tr>
+            <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td>A</td>
+        </tr>
+        <tr>
+            <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td>R</td>
+        </tr>
+        <tr>
+            <td>G</td><td>I</td><td>F</td><td>T</td><td class="black"></td><td class="black"></td><td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td><td class="black"></td><td>I</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td><td class="black"></td><td>R</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+        </tr>
+        <tr>
+            <td>S</td><td>T</td><td>A</td><td>R</td><td class="black"></td><td class="black"></td><td class="black"></td>
+        </tr>
+    </table>
+
+    <div class="clues">
+        <h2>Подсказки:</h2>
+        <div class="clue"><span class="highlight">По горизонтали:</span></div>
+        <div class="clue">1. Снеговик (7 букв): <em>snowman</em></div>
+        <div class="clue">4. Подарок (4 буквы): <em>gift</em></div>
+        <div class="clue">7. Звезда (4 буквы): <em>star</em></div>
+
+        <div class="clue"><span class="highlight">По вертикали:</span></div>
+        <div class="clue">1. Снег (4 буквы): <em>snow</em></div>
+        <div class="clue">3. Ель (3 буквы): <em>fir</em></div>
+    </div>
+
+    <p><em>💡 Совет: Все слова — на английском, но всем знакомы в новогоднем контексте!</em></p>
+</body>
+</html>
