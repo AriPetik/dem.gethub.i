@@ -35,28 +35,7 @@
     </p>
 </body>
 </html>
-    <script>
-        // Лёгкая анимация снега
-        document.addEventListener('DOMContentLoaded', () => {
-            const container = document.getElementById('snowflakes');
-            const snowflakes = ['❄', '❅', '❆', '✼'];
-            const count = 20;
-
-            for (let i = 0; i < count; i++) {
-                const el = document.createElement('div');
-                el.className = 'snowflake';
-                el.textContent = snowflakes[Math.floor(Math.random() * snowflakes.length)];
-                el.style.left = `${Math.random() * 100}%`;
-                el.style.fontSize = `${Math.random() * 1 + 0.8}rem`;
-                el.style.opacity = Math.random() * 0.5 + 0.3;
-                el.style.animationDuration = `${Math.random() * 5 + 5}s`;
-                el.style.animationDelay = `${Math.random() * 5}s`;
-                container.appendChild(el);
-    </script>
-</body>
-</html>
-
-
+    
 
 
 
