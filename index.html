@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <h1>Моя презентация</h1>
+    <h1>Моя презентация 🎄✨❄️</h1>
 
     <p>
         <a href="krossvordRU.html">Русский кроссворд</a><br>
@@ -22,7 +22,7 @@
 
     <p>
         Нажмите, чтобы скачать или открыть презентацию:<br>
-        <a href="СетьВводный.pptx" download>Презентация «СетьВодный» (.pptx)</a>
+        <a href="СетьВводный.pptx" download>Презентация «СетьВодный» (.pptx)</a>
     </p>
 
     <p>
@@ -35,7 +35,7 @@
     </p>
 
     <p>
-        <a href="https://common-store-hosting.cdn.giga.chat/019b35ce-e102-7410-ba01-46fcd5a7c0b2/019b35d4-9f6e-71d1-a4aa-e0b30fc5394b.mp4?filename=Моё%20видео.mp4" type="video/mp4">Видео: «Рождество» </a><br>
+        <a href="https://common-store-hosting.cdn.giga.chat/019b35ce-e102-7410-ba01-46fcd5a7c0b2/019b35d4-9f6e-71d1-a4aa-e0b30fc5394b.mp4?filename  =Моё%20видео.mp4" type="video/mp4">Видео: «Рождество» </a><br>
 
     </p>
 
@@ -43,14 +43,59 @@
         Документ-поздравление:<br>
         <a href="Документ LibreOffice (3).odt" download>Поздравляю с наступающим Рождеством! (.odt)</a>
     </p>
+
+   
+    <div style="
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+        pointer-events: none;
+        z-index: -1;
+    "></div>
+    <div id='snowflakes' style="
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    "></div>
+    <script>
+        
+        const container = document.getElementById('snowflakes');
+        const count = 50;
+        const snowflakes = [];
+        for (let i = 0; i < count; i++) {
+            const el = document.createElement('div');
+            el.textContent = '❄';
+            el.style.position = 'absolute';
+            el.style.fontSize = Math.random() * 20 + 10 + 'px';
+            el.style.color = 'rgba(255, 255, 255, 0.8)';
+            el.style.left = Math.random() * 100 + 'vw';
+            el.style.top = -Math.random() * 100 + 'px';
+            el.style.textShadow = '0 0 5px #aaa';
+            container.appendChild(el);
+            snowflakes.push({
+                el: el,
+                speed: Math.random() * 2 + 1,
+                drift: (Math.random() - 0.5) * 0.5,
+                x: parseFloat(el.style.left)
+            });
+        }
+        setInterval(() => {
+            snowflakes.forEach(sf => {
+                let top = parseFloat(sf.el.style.top) || 0;
+                sf.x += sf.drift;
+                top += sf.speed;
+                if (top > window.innerHeight + 50) {
+                    top = -50;
+                    sf.x = Math.random() * 100;
+                }
+                sf.el.style.top = top + 'px';
+                sf.el.style.left = sf.x + 'vw';
+            });
+        }, 50);
+    </script>
 </body>
 </html>
-
-
-
-
-
-
 
 
 
