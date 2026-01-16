@@ -271,6 +271,64 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование фамилии</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #222;
+            background-color: #fafafa;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        .result {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .plain {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .cipher {
+            font-size: 20px;
+            color: #2980b9;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .key {
+            font-size: 19px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Шифрование фамилии шифром Цезаря</h1>
+
+    <div class="result">
+        <div class="plain">Открытый текст: ПЕТРОЧЕНКО</div>
+        <div class="cipher">Шифротекст: ЩПЬЪШБПЧФШ</div>
+        <div class="key">Ключ: <em>k = 10</em></div>
+    </div>
+</body>
+</html>
+
 
 
 
